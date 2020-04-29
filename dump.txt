@@ -1,0 +1,71 @@
+===Database laravel_todolist
+
+== Table structure for table failed_jobs
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|bigint(20)|No|
+|connection|text|No|
+|queue|text|No|
+|payload|longtext|No|
+|exception|longtext|No|
+|failed_at|timestamp|No|current_timestamp()
+== Dumping data for table failed_jobs
+
+== Table structure for table migrations
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|migration|varchar(255)|No|
+|batch|int(11)|No|
+== Dumping data for table migrations
+
+|1|2014_10_12_000000_create_users_table|1
+|2|2019_08_19_000000_create_failed_jobs_table|1
+|3|2014_10_12_100000_create_password_resets_table|2
+|4|2020_04_17_103922_create_tasks_table|2
+== Table structure for table password_resets
+
+|------
+|Column|Type|Null|Default
+|------
+|email|varchar(255)|No|
+|token|varchar(255)|No|
+|created_at|timestamp|Yes|NULL
+== Dumping data for table password_resets
+
+== Table structure for table tasks
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|bigint(20)|No|
+|newTask|varchar(255)|No|
+|user_id|bigint(20)|No|
+|created_at|timestamp|Yes|NULL
+|updated_at|timestamp|Yes|NULL
+== Dumping data for table tasks
+
+|2|hello|1|2020-04-17 16:15:27|2020-04-17 18:45:15
+|5|hello world|1|2020-04-17 18:38:14|2020-04-17 18:38:14
+|6|finally it is working|1|2020-04-17 18:40:20|2020-04-17 18:40:20
+|7|it seems like wirking|1|2020-04-17 18:40:37|2020-04-17 18:40:37
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|bigint(20)|No|
+|name|varchar(255)|No|
+|**email**|varchar(255)|No|
+|email_verified_at|timestamp|Yes|NULL
+|password|varchar(255)|No|
+|remember_token|varchar(100)|Yes|NULL
+|created_at|timestamp|Yes|NULL
+|updated_at|timestamp|Yes|NULL
+== Dumping data for table users
+
+|1|AKHROR|mirzakhanov99@gmail.com|NULL|$2y$10$JrU1.KHZdG6VivxMl8qWBepxGjAn7PtVdsO/7drJiEpfgmDUH7i8y|NULL|2020-04-17 15:49:12|2020-04-17 15:49:12

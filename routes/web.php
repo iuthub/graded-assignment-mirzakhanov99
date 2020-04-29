@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TaskController@index');
+
+Route::post('/create', 'TaskController@create');
+Route::get('/blog/edit/{id}', 'TaskController@update');
+Route::post('/task/edit/{id}', 'TaskController@edit');
+Route::get('/task/delete/{id}', 'TaskController@delete');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
